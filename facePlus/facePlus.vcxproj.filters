@@ -30,6 +30,9 @@
     <ClInclude Include="Resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Base64.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="facePlus.cpp">
@@ -49,6 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="res\facePlus.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="cacert.pem">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>

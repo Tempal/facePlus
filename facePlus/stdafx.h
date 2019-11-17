@@ -51,4 +51,21 @@
 #endif
 #endif
 
+#define CURL_STATICLIB
 
+#pragma comment(lib,"libcurl.lib")
+
+#include "GdiPlus.h"  
+#pragma comment(lib,"GDIPlus.lib")  
+using namespace Gdiplus;
+
+#define WM_MSG WM_USER+0x01
+
+
+_ACRTIMP_ALT FILE* __cdecl __acrt_iob_func(unsigned);
+#ifdef __cplusplus 
+extern "C"
+#endif 
+FILE* __cdecl __iob_func(unsigned i) {
+	return __acrt_iob_func(i);
+}
