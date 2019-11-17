@@ -114,7 +114,7 @@ BOOL CfacePlusDlg::OnInitDialog()
 	myfile.open("./in.txt", std::ios::in);
 	if (!myfile)
 	{
-		MessageBox(_T("请在LaTeXocr.exe文件夹下面新建in.txt文件\r\n并且在in.txt文件写入两行：api_ID、api_key\r\n上面上个信息可以在https://console.bce.baidu.com/ai/申请"));
+		MessageBox(_T("请在facePlus.exe文件夹下面新建in.txt文件\r\n并且在in.txt文件写入两行：api_ID、api_key\r\n上面上个信息可以在https://console.bce.baidu.com/ai/申请"));
 		return -1;
 	}
 	else {
